@@ -7,7 +7,7 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/night.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +24,164 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<section>
+						<h1>Blockchain</h1>
+						<aside class="notes">
+							When we say the words “block” and “chain” in this context, 
+							we are actually talking about digital information (the “block”) stored 
+							in a public database (the “chain”).
+						</aside>
+					</section>
+					<section>
+						<img data-src="src/block.png" width="700px">
+						<aside class="notes">
+							“Blocks” on the blockchain are made up of pieces of information. 
+							Especially, they have three parts.
+						</aside>
+					</section>
+					<section>
+						<img data-src="src/Hash_function.svg" width="800px">
+						<aside class="notes">
+							Hash codes are created by a math function
+							that turns digital information into 
+							a string of numbers and letters.
+						</aside>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>How does it work?</h1>
+						<aside class="notes">
+								In order for a block to be added to the blockchain, however, 
+								4 things must happen.
+						</aside>
+					</section>
+					<section>
+						<ol>
+							<li>A transaction must occur.</li>
+							<li>That transaction must be verified.</li>
+							<li>That transaction must be stored in a block.</li>
+							<li>That block must be given a hash.</li>
+						</ol>
+						<aside class="notes">
+							In order for a block to be added to the blockchain, however, 
+							4 things must happen.
+						</aside>
+					</section>
+					<section>
+						<img data-src="src/blockchain_to_calculate_2.png" height="250px">
+						<aside class="notes">
+							The block is also given the hash of the most recent block added to the blockchain. 
+							Once hashed, the block can be added to the blockchain.
+						</aside>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Where Is the Blockchain Stored?</h1>
+						<aside class="notes">
+							Anyone can view the contents of the blockchain, 
+							but users can also opt to connect their computers to the blockchain network.
+						</aside>
+					</section>
+					<section>
+						<img data-src="src/blockchainnet.png" height="600px">
+						<aside class="notes"> 
+							Their computer receives a copy of the blockchain 
+							that is updated automatically whenever a new block is added. 
+						</aside>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Blockchain Security</h1>
+					</section>
+					<section>
+						<img data-src="src/blockchain-how-it-works.jpg" height="600px">
+						<aside class="notes"> 
+							After a block has been added to the end of the blockchain, 
+							it is very difficult to go back and change the contents of the block. 
+							That’s because each block contains its own hash, along with the hash 
+							of the block before it.
+							If the main information is edited in any way, the hash code changes as well. 
+						</aside>
+					</section>
+					<section>
+						<img data-src="src/Consensus_flow_chart.svg" height="600px">
+						<aside class="notes"> 
+							Once a block is added to the blockchain it becomes very difficult to edit and impossible to delete.
+							To address the issue of trust, blockchain networks have implemented tests for computers 
+							that want to join and add blocks to the chain. 
+							The tests, called “consensus models,” require users to “prove” themselves
+ 							before they can participate in a blockchain network.  
+						</aside>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Advantages of Blockchain</h1>
+					</section>
+					<section>
+						<ol>
+							<li>Decentralization</li>
+							<li>Blockchain is working 24 hours a day, seven days a week</li>
+							<li>Privacy</li>
+							<li>Security</li>
+							<li>Transparency</li>
+						</ol>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Disadvantage of Blockchain</h1>
+					</section>
+					<section>
+						<ol>
+							<li>Inefficiency</li>
+							<li>Privacy</li>
+						</ol>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Uses of Blockchain</h1>
+					</section>
+					<section>
+						<ol>
+							<li>Banks</li>
+							<li>Cryptocurrency</li>
+							<li>Healthcare</li>
+							<li>Smart Contracts</li>
+							<li>Supply Chains</li>
+							<li>Voting</li>
+						</ol>
+						<aside class="notes">
+							The most applications of blockchain being explored today. 
+						</aside>
+					</section>
+				</section>
+				<section>
+					<h1>Thanks for attention</h1>
+				</section>
+				<section>
+					<h2>Sources</h2>
+					<ul>
+						<li>
+							<a target="_blank" href="https://github.com/vlsergey/infosec">
+								https://github.com/vlsergey/infosec
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="https://www.investopedia.com/blockchain-explained-4579860">
+								Blockchain
+							</a>
+						</li>
+						<li>
+
+						</li>
+					</ul>
+				</section>
 			</div>
 		</div>
 
